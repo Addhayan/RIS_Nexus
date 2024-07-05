@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+    <h2>Pramesh Chitrakar’s Journey</h2>
+    <p>Follow the story of 'ded_l0ck' and his battle against cyberpsychosis.</p>
+    
+    <div class="roadmap">
+        <div class="chapter animated-chapter">
+            <h3>Chapter 1: The Awakening</h3>
+            <p>Pramesh Chitrakar, a renowned hacker known as 'ded_l0ck', discovers the first signs of cyberpsychosis in a close friend, triggering his journey into the dark underbelly of Navi Mumbai.</p>
+        </div>
+        <div class="arrow">
+            <span>&#8635;</span>
+        </div>
+        <div class="chapter animated-chapter">
+            <h3>Chapter 2: Shadows of the Neon</h3>
+            <p>As tensions rise in the city, 'ded_l0ck' navigates through the neon-lit streets, uncovering connections between the cyberpsychosis incidents and powerful corporate entities.</p>
+        </div>
+        <div class="arrow">
+            <span>&#8635;</span>
+        </div>
+        <div class="chapter animated-chapter">
+            <h3>Chapter 3: The Confrontation</h3>
+            <p>Pramesh confronts a cybernetically enhanced adversary driven mad by cyberpsychosis, leading to a dangerous showdown that tests his skills and resolve.</p>
+        </div>
+        <div class="arrow">
+            <span>&#8635;</span>
+        </div>
+        <div class="chapter animated-chapter">
+            <h3>Chapter 4: Unraveling the Conspiracy</h3>
+            <p>'ded_l0ck' delves deeper into the conspiracy behind the cyberpsychosis outbreaks, discovering a web of deceit and manipulation that threatens the entire city.</p>
+        </div>
+        <div class="arrow">
+            <span>&#8635;</span>
+        </div>
+        <div class="chapter animated-chapter">
+            <h3>Chapter 5: Last Stand</h3>
+            <p>With Navi Mumbai on the brink of chaos, Pramesh faces his ultimate challenge as he confronts the mastermind behind the cyberpsychosis incidents, risking everything to restore order.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .roadmap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .chapter {
+        width: 200px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+    }
+    .arrow {
+        width: 60px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .arrow span {
+        display: inline-block;
+        font-size: 24px;
+        line-height: 1;
+        animation: rotateArrow 2s infinite linear;
+    }
+    @keyframes rotateArrow {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+{% endblock %}

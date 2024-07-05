@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+    <h2>Cyberpsychosis</h2><BR><BR>
+    <p>Understand the threat of cyberpsychosis and how our solution helps.</p><BR><BR>
+    <nav class="cyberpsychosis-nav">
+        <ul>
+            <li><a href="{{ url_for('threats') }}">Threats</a></li>
+            <li><a href="{{ url_for('cure') }}">Cure</a></li>
+        </ul>
+    </nav>
+</section>
+{% endblock %}
